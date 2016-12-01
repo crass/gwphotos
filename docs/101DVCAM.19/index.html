@@ -37,8 +37,6 @@
       <div id="main" role="main">
 
         <div class="icons">
-          <a id="fullscreen"><img src="../static/img/fullscreen.png"
-            title="Fullscreen" alt="Fullscreen" /></a>
         </div>
         <div id="gallery">
               <a href="PICT0001.JPG">
@@ -367,6 +365,13 @@ Exposure: 1481089/16777216,                 <br>Date: Tuesday, 01. January 2008
 
 
     Galleria.ready(function() {
+        this.attachKeyboard({
+            right: this.next,
+            left: this.prev,
+            /* Toggle fullscreen display on press of 'f' key */
+            0x46: this.toggleFullscreen,
+        });
+
 
      });
 
