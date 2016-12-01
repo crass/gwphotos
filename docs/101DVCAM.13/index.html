@@ -11,8 +11,9 @@
 <!--
     <link rel="stylesheet" href="../static/classic/galleria.classic.css">
     <link rel="stylesheet" href="../static/js/twelve/galleria.twelve.css">
- -->
+
     <link rel="stylesheet" href="../static/css/style.min.css">
+ -->
     <style>
       body { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     </style>
@@ -335,8 +336,8 @@ Exposure: 1481089/16777216,                 <br>Date: Tuesday, 01. January 2008
     <script src="../static/js/galleria-1.4.7.js"></script>
     <script src="../static/js/galleria-1.4.7.min.js"></script>
     <script src="../static/js/galleria.classic.min.js"></script>
- -->
     <script src="../static/js/galleria.history.min.js"></script>
+ -->
     <script>
 
     Galleria.configure({
@@ -349,22 +350,6 @@ Exposure: 1481089/16777216,                 <br>Date: Tuesday, 01. January 2008
     Galleria.run("#gallery");
 
 
-    Galleria.ready(function() {
-        this.attachKeyboard({
-            right: this.next,
-            left: this.prev,
-            /* Toggle fullscreen display on press of 'f' key */
-            0x46: this.toggleFullscreen,
-        });
-
-        var gallery = this;
-        $('#fullscreen').click(function() {
-          gallery.toggleFullscreen();
-        });
-
-        $('.icons').appendTo(this.$('container'));
-
-     });
 
     </script>
   </body>
